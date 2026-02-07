@@ -6,6 +6,7 @@ theme:
   font:
     text: Ubuntu
     code: JetBrains Mono
+  favicon: images/logo/arro_profile.png
   logo: images/logo/arro_profile.png
   features:
     - content.code.copy
@@ -14,6 +15,9 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.indexes
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.path
   palette:
     # Dark Mode
     - scheme: slate
@@ -37,6 +41,7 @@ extra_css:
   - stylesheets/effects.css
   - stylesheets/codeblocks.css
   - stylesheets/extra.css
+  - stylesheets/drawer.css
 extra:
   generator: false
 extra_javascript:
@@ -56,3 +61,23 @@ markdown_extensions:
   
 watch:
   - assets
+
+nav:
+  - Home: index.md
+  - Mods:
+      - Mods/index.md
+      - Test: Mods/test.md
+  - Guides:
+      - Guides/index.md
+      - Test: Guides/test.md
+  - Common:
+      - Common/index.md
+      - Test: Common/test.md
+  - Tools:
+      - Tools/index.md
+      - RECTF: 
+          - Tools/RECTF/index.md     #CLICKABLE
+          - Usage: Tools/RECTF/usage.md      # FIRST
+          - Examples: Tools/RECTF/examples.md   # SECOND etc.
+      - ImagShow: 
+          - Tools/ImagShow/index.md

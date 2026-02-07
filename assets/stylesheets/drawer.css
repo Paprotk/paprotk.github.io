@@ -1,0 +1,53 @@
+/*https://open.spotify.com/track/30ivSTv9MG6YPemSX34nTp?si=9e117c4ee36440ad*/
+
+/* Title colors */
+[data-md-color-scheme="slate"] .md-nav__title{
+  background-color: transparent !important;
+  color: #8c8e95 !important;
+}
+
+[data-md-color-scheme="default"] .md-nav__title{
+  background-color: transparent !important;
+  color: #616469 !important;
+}
+
+/* Backdrop */
+[data-md-color-scheme="slate"] .md-sidebar--primary.md-sidebar
+{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary.md-sidebar
+{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Normal Containers */
+.md-sidebar--primary {
+  background-color: transparent !important;
+  overflow: visible !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary {
+  background-color: rgba(30, 33, 41, 0.6) !important;
+   backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  width: 100%;
+  margin-right: -1px;
+  padding-right: 0;
+  height: 100%;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary {
+  background-color: rgba(255, 255, 255, 1) !important;
+  width: 100%;
+  margin-right: -1px;
+  padding-right: 0;
+  height: 100%;
+}
+
+.md-nav--primary .md-nav__list {
+  background-color: transparent !important;
+}
