@@ -5,10 +5,14 @@ theme:
   font:
     text: Ubuntu
     code: JetBrains Mono
+  logo: assets/logo/arro_profile.png
   features:
     - content.code.copy
     - content.code.annotate
+    - content.code.select
     - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
   palette:
     # Dark Mode
     - scheme: slate
@@ -27,12 +31,15 @@ theme:
       accent: green
 extra_css:
   - stylesheets/header.css
+  - stylesheets/tabs.css
   - stylesheets/footer.css
   - stylesheets/effects.css
   - stylesheets/codeblocks.css
   - stylesheets/extra.css
 extra:
   generator: false
+extra_javascript:
+  - javascripts/logo-hover.js
 
 markdown_extensions:
   - pymdownx.highlight:
