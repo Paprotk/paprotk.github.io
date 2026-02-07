@@ -1,0 +1,18 @@
+.md-footer {
+  margin-top: 0 !important;
+}
+
+.md-footer-meta {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border-top: none !important;
+}
+
+.md-main__inner {
+  margin-bottom: 20px !important;
+}
+
+.md-footer-meta__inner {
+  display: none !important;
+}

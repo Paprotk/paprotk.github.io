@@ -1,0 +1,114 @@
+/* 1. THEME VARIABLES */
+[data-md-color-scheme="default"] {
+  --header-bg: rgba(255, 255, 255, 0.6);
+  /* Lightened from #616469 to #808388 (approx 10% lighter) */
+  --header-text: #808388; 
+  --search-hover: rgba(0, 0, 0, 0.03);
+}
+
+[data-md-color-scheme="slate"] {
+  --header-bg: rgba(30, 33, 41, 0.6);
+  --header-text: #8c8e95;
+  --search-hover: rgba(255, 255, 255, 0.1);
+}
+
+/* 2. HEADER & GLASSMORPHISM */
+.md-header {
+  background-color: var(--header-bg) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.md-header__button, 
+.md-header__title,
+.md-search__icon,
+.md-search__input::placeholder {
+  color: var(--header-text) !important;
+}
+
+/* 3. SEARCH FORM & INPUT TEXT */ /* I HATE THIS */
+.md-search__form {
+  border-radius: 8px;
+  transition: background-color 250ms;
+}
+
+/* Keeps the text color consistent with the icon when typing */ 
+.md-search__input {
+  color: var(--header-text) !important;
+}
+
+.md-search__form:not(:focus-within):hover {
+  background-color: var(--search-hover) !important;
+}
+
+/* 4. LOGO & ANIMATION */
+.md-header__button.md-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-header__button.md-logo img:not(.spinning-bob-overlay) {
+  display: block;
+  width: 40px; 
+  height: 40px;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  position: relative; 
+  z-index: 5;
+}
+
+.md-header__button.md-logo .spinning-bob-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); 
+  width: 40px;
+  height: 40px;
+  border-radius: 8%;
+  object-fit: contain;
+  opacity: 0;
+  z-index: 6;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.md-header__button.md-logo:hover .spinning-bob-overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.md-header__button.md-logo:hover img:not(.spinning-bob-overlay) {
+  opacity: 0;
+  transform: scale(1);
+}
+
+/* 5. MOBILE FIXES */
+[data-md-toggle="search"]:checked ~ .md-header {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background-color: var(--md-default-bg-color) !important;
+  transition: none;
+}
+
+@media screen and (max-width: 76.25em) {
+  .md-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .md-header__title {
+    flex-grow: 1;
+    margin-right: 1rem;
+  }
+
+  .md-header__option {
+    margin-left: 0.5rem;
+  }
+}
+
+.md-search__inner {
+  z-index: 100;
+}
