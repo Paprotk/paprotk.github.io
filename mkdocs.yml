@@ -1,7 +1,14 @@
-site_name: My MkDocs Material Documentation
-site_url: https://sitename.example
+site_name: Arro mods
+site_url: https://arro-mods.cc
 theme:
   name: material
+  font:
+    text: Ubuntu
+    code: JetBrains Mono
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.instant
   palette:
     # Dark Mode
     - scheme: slate
@@ -9,12 +16,32 @@ theme:
         icon: material/weather-sunny
         name: Dark mode
       primary: green
-      accent: deep purple
+      accent: green
 
     # Light Mode
     - scheme: default
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: blue
-      accent: deep orange
+      primary: green
+      accent: green
+extra_css:
+  - stylesheets/header.css
+  - stylesheets/footer.css
+  - stylesheets/effects.css
+  - stylesheets/codeblocks.css
+  - stylesheets/extra.css
+extra:
+  generator: false
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details

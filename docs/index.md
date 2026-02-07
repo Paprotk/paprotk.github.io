@@ -15,3 +15,160 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+/* Light Mode Blur (Default) */
+[data-md-color-scheme="default"] .md-header {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+```py title="title" linenums="1"
+# Like this
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+print("Hello Arro Mods")
+```
+
+
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
+```py linenums="1"
+# Like this
+print("Hello Arro Mods")
+```
