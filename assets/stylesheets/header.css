@@ -1,43 +1,47 @@
-[data-md-color-scheme="default"] .md-header {
-  background-color: rgba(255, 255, 255, 0.6) !important;
+/* 1. THEME VARIABLES */
+[data-md-color-scheme="default"] {
+  --header-bg: rgba(255, 255, 255, 0.6);
+  /* Lightened from #616469 to #808388 (approx 10% lighter) */
+  --header-text: #808388; 
+  --search-hover: rgba(0, 0, 0, 0.03);
+}
+
+[data-md-color-scheme="slate"] {
+  --header-bg: rgba(30, 33, 41, 0.6);
+  --header-text: #8c8e95;
+  --search-hover: rgba(255, 255, 255, 0.1);
+}
+
+/* 2. HEADER & GLASSMORPHISM */
+.md-header {
+  background-color: var(--header-bg) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-[data-md-color-scheme="slate"] .md-header {
-  background-color: rgba(30, 33, 41, 0.6) !important; 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+.md-header__button, 
+.md-header__title,
+.md-search__icon,
+.md-search__input::placeholder {
+  color: var(--header-text) !important;
 }
 
-
-/* Buttons with proper contrast */
-[data-md-color-scheme="default"] .md-header__button, 
-[data-md-color-scheme="default"] .md-header__title {
-  color: #616469 !important;
-}
-[data-md-color-scheme="slate"] .md-header__button, 
-[data-md-color-scheme="slate"] .md-header__title {
-  color: #8c8e95 !important;
-}
-
+/* 3. SEARCH FORM & INPUT TEXT */ /* I HATE THIS */
 .md-search__form {
   border-radius: 8px;
   transition: background-color 250ms;
 }
 
-[data-md-color-scheme="default"] .md-search__form {
-  color :#616469 !important;
-  border-radius: 8px;
-  transition: background-color 250ms;
+/* Keeps the text color consistent with the icon when typing */ 
+.md-search__input {
+  color: var(--header-text) !important;
 }
 
-[data-md-color-scheme="default"] .md-search__icon,
-[data-md-color-scheme="default"] .md-search__input::placeholder {
-  color: #616469 !important;
+.md-search__form:not(:focus-within):hover {
+  background-color: var(--search-hover) !important;
 }
 
-/* LOGO */
+/* 4. LOGO & ANIMATION */
 .md-header__button.md-logo {
   position: relative;
   display: inline-flex;
@@ -60,7 +64,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1); 
-  
   width: 40px;
   height: 40px;
   border-radius: 8%;
@@ -68,7 +71,6 @@
   opacity: 0;
   z-index: 6;
   pointer-events: none;
-
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -82,7 +84,7 @@
   transform: scale(1);
 }
 
-/* Mobile specific tweaks & fixes */
+/* 5. MOBILE FIXES */
 [data-md-toggle="search"]:checked ~ .md-header {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;

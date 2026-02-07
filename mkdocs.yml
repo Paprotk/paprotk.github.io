@@ -1,3 +1,8 @@
+#.\venv\Scripts\activate  
+# mkdocs serve --livereload
+# git add .
+# git commit -m "message"
+# git push -u origin master
 site_name: Arro mods
 site_url: https://arro-mods.cc
 theme:
@@ -18,6 +23,9 @@ theme:
     # - navigation.sections
     # - navigation.expand
     - navigation.path
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.top
   palette:
     # Dark Mode
     - scheme: slate
@@ -42,6 +50,7 @@ extra_css:
   - stylesheets/codeblocks.css
   - stylesheets/extra.css
   - stylesheets/drawer.css
+  - stylesheets/misc/backtotop.css
 extra:
   generator: false
 extra_javascript:
