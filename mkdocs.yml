@@ -2,10 +2,11 @@ site_name: Arro mods
 site_url: https://arro-mods.cc
 theme:
   name: material
+  custom_dir: assets
   font:
     text: Ubuntu
     code: JetBrains Mono
-  logo: assets/logo/arro_profile.png
+  logo: images/logo/arro_profile.png
   features:
     - content.code.copy
     - content.code.annotate
@@ -52,3 +53,6 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
+  
+watch:
+  - assets

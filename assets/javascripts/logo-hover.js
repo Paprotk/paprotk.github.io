@@ -5,7 +5,7 @@ function injectSpinningBob() {
   if (headerLogo && !headerLogo.querySelector('.spinning-bob-overlay')) {
     const bobImg = document.createElement('img');
     
-    bobImg.src = "/assets/logo/spinning_bob.webp"; 
+    bobImg.src = "/images/logo/spinning_bob.webp"; 
     
     bobImg.classList.add('spinning-bob-overlay');
     bobImg.alt = "";
